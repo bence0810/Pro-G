@@ -28,7 +28,7 @@
  	display: flex;
  	width: 100%;
  	height: 100px;
- 	position: absolute;
+ 	/*position: absolute;*/
  	opacity: 0.70;
  	background-color: black;
  }
@@ -272,6 +272,7 @@ width: 100%;
 height: auto;
 background-color: black;
 overflow: hidden;
+/*position: absolute;*/
 
 }
 
