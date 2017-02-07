@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ProG</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+	
+	<div class="theBox">
+	
+	<!-- 1 -->
+
+		<div class="first">
+			
+			<div class="left">
+				<div class="image">
+				<img src="css/images/logo.png">
+				</div>
+			</div>
+			<div class="right">
+
+
+
+<ul>
+	<li>
+	<div class="menu">
+		<img src="css/images/menuicon.png">
+		</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index2.html">About Us</a></li>
+				<li><a href="index3.html">Sercives</a></li>
+				<li><a href="index4.html">Product</a></li>
+				<li><a href="index5.html">Gallery</a></li>
+			</ul>
+	
+	
+	</li>
+</ul>
+
+
+	
+
+			</div>
+		
+		</div>
+
+	<!-- 2 -->
+
+<div class="second">
+			
+			<div class="main">
+				
+			<img class="mySlides" src="css/images/background1.png"
+			style="display: block;">
+
+
+
+ <img class="mySlides" src="css/images/background2.jpg" style="display: block;">
+  <img class="mySlides" src="css/images/background3.jpg" style="display: none;">
+  <img class="mySlides" src="css/images/background4.jpg" style="display: none;">
+  <img class="mySlides" src="css/images/background5.jpg" style="display: none;">
+
+</div>
+
+<div class="arow">
+  <div class="display-left" onclick="plusDivs(-1)">❮</div>
+  <div class="display-right" onclick="plusDivs(1)">❯</div>
+  </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+	<!-- 3 -->
+
+		<div class="third">
+			
+			<div class="footer"></div>
+
+		</div>
+
+
+
+</body>
+
+</html>
